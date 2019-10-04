@@ -29,7 +29,10 @@ Sortie attendue:
  */
 
 function filterOnPrice(products, maxPrice) {
+   return products.filter(value => value.price <= maxPrice) 
 }
+
+
 
 // Ne pas modifier l'export
 module.exports = filterOnPrice;
